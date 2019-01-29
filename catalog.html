@@ -1,81 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-<!--Хедер-->
-  	 <header class="main-header">
-    	<nav class="main-navigation">
-    		<ul class="site-navigatoin">
-    			<li>
-    				<a class="site-navigatoin-link" href="info.htlm">Информация</a>
-    			</li>
-    			<li>
-    				<a class="site-navigatoin-link" href="media.htlm">Фото и видео</a>
-    			</li>
-    			<li>
-    				<a class="site-navigatoin-link" href="map.htlm"/>Карта штата</a>
-    			</li>
-    			<li class="site-navigatoin-current">
-    				<a class="site-navigatoin-link" href="catalog.htlm">Гостиницы</a>
-    			</li>
-<!--Логотип-->
-    			<li class="site-navigatoin-logo">
-    				<a class="main-heder-logo" href="logo.htlm">
-    					<img src="img/index-logo.svg" width="188" height="96" alt="Седона">
-    				</a>
-    			</li>
-    		</ul>
-    	</nav>
-    </header>
-<!--Основная часть-->
-    <main>
-<!--Фильтр гостинец-->
-   		<section>
-    		<!--Место для формы-->	
-    	</section>
-<!--Результаты поиска-->
-		<section class="result">
-			<div class="finding">
-				<div class="finding-text">
-	              <p class="results-title">
-	              	Найдено: 
-	              	<span class="number">3</span>
-	             </p>
-	             <p class="finding-title"> Сортировка:</p>
-	              <ul class="finding-list">
-	                <li><a class="sorting-active disabled" href="#">По цене</a></li>
-	                <li><a class="disabled" href="#">По типу</a></li>
-	                <li><a class="disabled" href="#">По рейтингу</a></li>
-	              </ul>
-	            </div>
-<!--Стрелки-->            
-	            <div class="arrows">
-	              <a class="arrow ascending" href="#"></a>
-	              <a class="arrow descending down-active" href="#"></a>
-	            </div>
-			</div>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Седона</title>
+</head>
+<body>
+	<div class="container">
+		<!--Хедер-->
+		<header class="main-header">
+			<nav class="main-navigation">
+				<ul class="site-navigation">
+					<li>
+						<a class="site-navigation-link" href="info.htlm">Информация</a>
+					</li>
+					<li>
+						<a class="site-navigation-link" href="media.htlm">Фото и видео</a>
+					</li>
+					<li>
+						<a class="site-navigation-link" href="map.htlm"/>Карта штата</a>
+					</li>
+					<li class="site-navigation-current">
+						<a class="site-navigation-link" href="catalog.htlm">Гостиницы</a>
+					</li>
+					<!--Логотип-->
+					<li class="site-navigation-logo">
+						<a class="main-header-logo" href="logo.htlm">
+							<img src="img/index-logo.svg" width="188" height="96" alt="Седона"> 
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--Основная часть-->
+		<main>
+			<h1 class="visually-hidder">Поиск желаемой гостиницы</h1>
+			<!--Фильтр гостинец-->
+			<section>
+				<!--Место для формы-->	
+			</section>
+			<!--Результаты поиска-->
+			<section class="result">
+				<h2 class="visually-hiden">Результаты поиска:</h2>
+				<div class="finding">
+					<div class="finding-text">
+						<p class="results-title">
+							Найдено: 
+							<span class="number">3</span>
+						</p>
+						<p class="finding-title"> Сортировка:</p>
+						<ul class="finding-list">
+							<li><a class="sorting-active disabled" href="#">По цене</a></li>
+							<li><a class="disabled" href="#">По типу</a></li>
+							<li><a class="disabled" href="#">По рейтингу</a></li>
+						</ul>
+					</div>
+					<!--Стрелки-->            
+					<div class="arrows">
+						<a class="arrow ascending" href="#"></a>
+						<a class="arrow descending down-active" href="#"></a>
+					</div>
+				</div>
 
-			<div class="hotels">
-<!--Гостиница-->	
-				<div class="hotel">
-							<div class="hotel-foto">
-								<img src="img/hotel-1.jpg" alt="Amara Resort & Spa">
+				<div class="hotels">
+					<!--Гостиница-->	
+					<div class="hotel">
+						<div class="hotel-foto">
+							<img src="img/hotel-1.jpg" alt="Amara Resort & Spa">
+						</div>
+						<div class="hotel-info">
+							<h3><a href="#" class="hotel-title">Amara Resort & Spa</a></h3>
+							<div class="hotel-text">
+								<p> Гостиница </p>
+								<p> От 4000 Р. </p>
 							</div>
-							<div class="hotel-info">
-								<a href="#" class="hotel-title">Amara Resort & Spa</a>
-								<div class="hotel-text">
-									<p> Гостиница </p>
-									<p> От 4000 Р. </p>
-								</div>
-								<p class="buttons">
-									<a href="#" class="item-button more"></a>
-									<a href="#" class="item-button book"></a>
-								</p>
-							</div>	
-					<!--Рейтинг-->
+							<p class="buttons">
+								<a href="#" class="item-button more"></a>
+								<a href="#" class="item-button book"></a>
+							</p>
+						</div>	
+						<!--Рейтинг-->
 						<div class="rating">
 							<div class="rating-stars">
 								<span></span>
@@ -86,25 +89,24 @@
 							</div>
 							<p class="rating-text"> Рейтинг 8,5 </p>
 						</div>
-				</div>	
-<!--Гостиница-2-->	
-				<div class="hotel">
-					<div class="line-results">
-							<div class="hotel-foto">
-								<img src="img/hotel-2.jpg" alt="Desert Quail Inn">
+					</div>	
+					<!--Гостиница-2-->	
+					<div class="hotel">
+						<div class="hotel-foto">
+							<img src="img/hotel-2.jpg" alt="Desert Quail Inn">
+						</div>
+						<div class="hotel-info">
+							<h3><a href="#" class="hotel-title">Desert Quail Inn</a></h3>
+							<div class="hotel-text">
+								<p>	Мотель </p>
+								<p> От 3000 Р. </p>
 							</div>
-							<div class="hotel-info">
-								<a href="#" class="hotel-title">Desert Quail Inn</a>
-								<div class="hotel-text">
-									<p>	Мотель </p>
-									<p> От 3000 Р. </p>
-								</div>
-								<p class="buttons">
-									<a href="#" class="item-button more"></a>
-									<a href="#" class="item-button book"></a>
-								</p>
-							</div>
-					<!--Рейтинг-->
+							<p class="buttons">
+								<a href="#" class="item-button more"></a>
+								<a href="#" class="item-button book"></a>
+							</p>
+						</div>
+						<!--Рейтинг-->
 						<div class="rating">
 							<div class="rating-stars">
 								<span></span>
@@ -113,26 +115,24 @@
 							</div>
 							<p class="rating-text"> Рейтинг 8,9 </p>
 						</div>
-					</div>
-				</div>	
-<!--Гостиница-3-->	
-				<div class="hotel">
-					<div class="line-results">
-							<div class="hotel-foto">
-								<img src="img/hotel-3.jpg" alt="Villas at Poco Diablo">
+					</div>	
+					<!--Гостиница-3-->	
+					<div class="hotel">
+						<div class="hotel-foto">
+							<img src="img/hotel-3.jpg" alt="Villas at Poco Diablo">
+						</div>
+						<div class="hotel-info">
+							<h3><a href="#" class="hotel-title">Villas at Poco Diablo</a></h3>
+							<div class="hotel-text">
+								<p> Апартаменты </p>
+								<p> От 2000 Р. </p>
 							</div>
-							<div class="hotel-info">
-								<a href="#" class="hotel-title">Villas at Poco Diablo</a>
-								<div class="hotel-text">
-									<p> Апартаменты </p>
-									<p> От 2000 Р. </p>
-								</div>
-								<p class="buttons">
-									<a href="#" class="item-button more"></a>
-									<a href="#" class="item-button book"></a>
-								</p>
-							</div>
-					<!--Рейтинг-->
+							<p class="buttons">
+								<a href="#" class="item-button more"></a>
+								<a href="#" class="item-button book"></a>
+							</p>
+						</div>
+						<!--Рейтинг-->
 						<div class="rating">
 							<div class="rating-stars">
 								<span></span>
@@ -140,27 +140,27 @@
 							</div>
 							<p class="rating-text"> Рейтинг 9,2 </p>
 						</div>
-					</div>
-				</div>	
-			</div>		
-		</section>
-    </main>
-<!--Футер-->
-	<footer class="main-footer">
-		<p class="main-footer-hashtag"> #visitSEDONA </p>
-		<ul>
-			<li class="social-button"><a href="#"></a>Твиттер</li>
-			<li class="social-button"><a href="#"></a>Фейсбук</li>
-			<li class="social-button"><a href="#"></a>Ютуб</li>
-		</ul>
-		<p class="footer-copyright">
-			<b> Website by </b>
-			<a class="button" href="https://htmlacademy.ru">HTLM Academy
-				<img src="footer-copyright-logo" width="27" height="34">
-			</a>
-			<b> HTLM academy </b>
-		</p>
-	</footer>
-  	</body>
-  </html>
+					</div>	
+				</div>		
+			</section>
+		</main>
+		<!--Футер-->
+		<footer class="main-footer">
+			<p class="main-footer-hashtag"> #visitSEDONA </p>
+			<ul>
+				<li class="social-button"><a href="#"></a>Твиттер</li>
+				<li class="social-button"><a href="#"></a>Фейсбук</li>
+				<li class="social-button"><a href="#"></a>Ютуб</li>
+			</ul>
+			<p class="footer-copyright">
+				<b> Website by </b>
+				<a class="button" href="https://htmlacademy.ru">HTLM Academy
+					<img src="footer-copyright-logo" width="27" height="34">
+				</a>
+				<b> HTLM academy </b>
+			</p>
+		</footer>
+	</div>
+</body>
+</html>
 
