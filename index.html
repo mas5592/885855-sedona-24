@@ -121,44 +121,44 @@
             <div class="form-content">
               <!--Даты-->
               <p class="data">
-                <label class="data" for="arrival">Дата заезда</label>
-                <input class="calendar" type="text" name="data" id="arrival" placeholder="24 Апреля 2017" value="">
+                <label class="labeles" for="arrival">Дата заезда</label>
+                <input class="number" type="text" name="data" id="arrival" placeholder="24 Апреля 2017" value="">
                 <button class="button">
                   <img src="img/calendar.svg" width="21" height="22" alt="Иконка календарь">
                 </button>
               </p>
               <p class="data">
-                <label class="data" for="departure">Дата выезда</label>
-                <input class="calendar" type="text" name="data" id="departure" placeholder="4 Июля 2017" value="">
+                <label class="labeles" for="departure">Дата выезда</label>
+                <input class="number" type="text" name="data" id="departure" placeholder="4 Июля 2017" value="">
                 <button class="button">
                   <img src="img/calendar.svg" width="21" height="22" alt="Иконка календарь">
                 </button>
               </p>
               <!--Дополнительная инфо-->
-              <p class="grownup-info">
-                <label class="grownup-label" for="grownup-number">Взрослые:</label>
+              <div class="grownup-info">
+                <label class="labeles" for="grownup-number">Взрослые:</label>
                 <div class="input-wrapper">
                   <button type="button" class="form-minus" name="minus-grownup">
                     <img class="minus" src="img/minus.svg" width="12" height="3" alt="Уменьшить колличество">
                   </button>
-                  <input class="people-number" id="grownup-number" type="text" pattern="[0-9]" value="2">
+                  <input class="number" id="grownup-number" type="text" pattern="[0-9]" value="2">
                   <button type="button" class="form-plus" name="plus-grownup">
                     <img class="plus" src="img/plus.svg" width="11" height="11" alt="Увеличить колличество">
                   </button>
                 </div>
-              </p>
-              <p class="kids-info">
-                <label class="kids-label" for="kids-number">Дети:</label>
+              </div>
+              <div class="kids-info">
+                <label class="labeles" for="kids-number">Дети:</label>
                 <div class="input-wrapper">
                   <button type="button" class="form-minus" name="minus-kids">
                     <img class="minus" src="img/minus.svg" width="12" height="3" alt="Уменьшить колличество">
                   </button>
-                  <input class="people-number" id="kids-number" type="text" pattern="[0-9]" value="0">
+                  <input class="number" id="kids-number" type="text" pattern="[0-9]" value="0">
                   <button type="button" class="form-plus" name="plus-kids">
                     <img class="plus" src="img/plus.svg" width="11" height="11" alt="Увеличить колличество">
                   </button>
                 </div>
-              </p>
+              </div>
               <input type="submit" value="Найти">
             </div>
           </form>
