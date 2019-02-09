@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 
 <body>
@@ -28,8 +31,8 @@
     <!--Основная часть-->
     <main>
       <!--Заглавное изображение-->
-      <div class="intro intro-main-image">
-        <img class="intro-sedona" src="img/intro-sedona.svg" width="459" height="353" alt="Интро: Welcome to gorgeous Sedona">
+      <div class="intro">
+          <img class="intro-sedona" src="img/intro-sedona.svg" width="459" height="353" alt="Интро: Welcome to gorgeous Sedona">
       </div>
       <section class="promo">
         <!--Вступительный текст-->
@@ -39,7 +42,7 @@
         </div>
         <!--Причины посетить(текст)-1-->
         <div class="row">
-          <div class="column">
+          <div class="column column-1">
             <div class="column-text">
               <h2 class="column-title">Настоящий городок</h2>
               <p class="column-number"> — №1 — </p>
@@ -76,9 +79,9 @@
         </ul>
         <!--Причины посетить(текст)-2-->
         <div class="row">
-          <div class="column">
+          <div class="column column-1">
               <h2 class="column-title"> Там есть Мост дьявола</h2>
-              <p class="column-number"> — №2 —т</p>
+              <p class="column-number"> — №2 —</p>
               <p class="column-description"> Да, по нему можно пройти! Если конечно вы осмелитесь </p>
           </div>
           <!--Причины посетить(фото)-2-->
@@ -88,19 +91,19 @@
         </div>
         <!--Причины посетить-3-->
         <div class="row">
-          <div class="column">
+          <div class="column column-2">
               <h2 class="column-title"> Небольшая площадь </h2>
               <p class="column-number"> — №3 — </p>
               <p class="column-description"> Все достопримечательности находятся очень близко </p>
           </div>
             <!--Причины посетить-4-->
-          <div class="column">
+          <div class="column column-2">
               <h2 class="column-title"> Красивая дорога </h2>
               <p class="column-number"> — №4 — </p>
               <p class="column-description"> Ехать в Седону из Лас-Вегаса совсем не скучно! </p>
           </div>
             <!--Причины посетить-5-->
-          <div class="column">
+          <div class="column column-2">
               <h2 class="column-title"> Мало туристов </h2>
               <p class="column-number"> — №5 — </p>
               <p class="column-description"> Большинство едет в гранд каньон и толпится там </p>
@@ -120,20 +123,22 @@
             <h2>Поиск гостиницы в Седоне</h2>
             <div class="form-content">
               <!--Даты-->
-              <p class="data">
-                <label class="labeles" for="arrival">Дата заезда</label>
-                <input class="number" type="text" name="data" id="arrival" placeholder="24 Апреля 2017" value="">
-                <button class="button">
-                  <img src="img/calendar.svg" width="21" height="22" alt="Иконка календарь">
-                </button>
-              </p>
-              <p class="data">
-                <label class="labeles" for="departure">Дата выезда</label>
-                <input class="number" type="text" name="data" id="departure" placeholder="4 Июля 2017" value="">
-                <button class="button">
-                  <img src="img/calendar.svg" width="21" height="22" alt="Иконка календарь">
-                </button>
-              </p>
+              <div class="number">
+                <p class="data">
+                  <label class="labeles" for="arrival">Дата заезда</label>
+                  <input class="number" type="text" name="data" id="arrival" placeholder="24 Апреля 2017" value="">
+                  <button class="button">
+                    <img class="calendar" src="img/calendar.svg" width="21" height="22" alt="Иконка календарь">
+                  </button>
+                </p>
+                <p class="data">
+                  <label class="labeles" for="departure">Дата выезда</label>
+                  <input class="number" type="text" name="data" id="departure" placeholder="4 Июля 2017" value="">
+                  <button class="button">
+                    <img class="calendar" src="img/calendar.svg" width="21" height="22" alt="Иконка календарь">
+                  </button>
+                </p>
+              </div>
               <!--Дополнительная инфо-->
               <div class="grownup-info">
                 <label class="labeles" for="grownup-number">Взрослые:</label>
@@ -159,7 +164,7 @@
                   </button>
                 </div>
               </div>
-              <input type="submit" value="Найти">
+              <input class="look" type="submit" value="Найти">
             </div>
           </form>
         </section>
@@ -171,11 +176,11 @@
     </main>
     <!--Футер-->
     <footer class="main-footer">
-      <p class="main-footer-hashtag"> #visitSEDONA </p>
+      <p class="hashtag"> #visitSEDONA </p>
       <ul>
-        <li class="social-button"><a href="https://twitter.com/" class="social-icon tw" target="blank" aria-label="Наша страница на Twitter">Twitter</a>
-          <li class="social-button"><a href="https://www.facebook.com/" class="social-icon fb" target="blank" aria-label="Наша страница на Facebook">Facebook</a></li>
-          <li class="social-button"><a href="http://www.youtube.com/" class="social-icon youtube" target="blank" aria-label="Наша страница на YouTube">Youtube</a></li>
+        <li class="social-icon"><a href="https://twitter.com/" class="social-icon-tw" target="blank" aria-label="Наша страница на Twitter">Twitter</a>
+          <li class="social-icon"><a href="https://www.facebook.com/" class="social-icon-fb" target="blank" aria-label="Наша страница на Facebook">Facebook</a></li>
+          <li class="social-icon"><a href="http://www.youtube.com/" class="social-icon-youtube" target="blank" aria-label="Наша страница на YouTube">Youtube</a></li>
       </ul>
       <p class="footer-copyright">
         <b> Website by </b>
