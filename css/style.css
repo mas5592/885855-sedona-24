@@ -13,35 +13,18 @@ body {
   background-color: #f2f2f2;
   background-position: top center;
 }
-header, nav, section, div, footer, main, form {
+.blok {
   display: block;
 }
-header {
-  text-align: center;
-  font-weight: 700;
-  background: #fff;
-  min-width: 768px;
-  z-index: 60;
-  position: fixed;
-  width: 100%;
-}
-h1 {
+.main-title {
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
 }
-h2 {
+.title-text {
   font-size: 21px;
-  line-height: 21px;
-}
-h3 {
-  font-size: 30px;
-  line-height: 36px;
-}
-p {
-  font-size: 14px;
   line-height: 21px;
 }
 img {
@@ -50,17 +33,13 @@ img {
 a {
   text-decoration: none;
 }
-ul {
+.ul {
   list-style: none;
-}
-footer {
-  width: 1200px;
 }
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
-  height: 1px;
   margin: -1px;
 }
 /*Хедер*/
@@ -68,10 +47,15 @@ footer {
   background: #fff;
   width: 1200px;
   position: relative;
-  margin: auto;
+  margin: 0 auto;
 }
 .main-header {
   position: static;
+  text-align: center;
+  font-weight: 700;
+  background: #fff;
+  z-index: 60;
+  width: 1200px;
 }
 .site-navigation {
   font-size: 0;
@@ -87,11 +71,6 @@ footer {
   line-height: 56px;
   font-weight: 700;
 }
-.site-navigation ul {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
 .site-navigation li {
   display: inline-block;
   box-sizing: border-box;
@@ -102,33 +81,23 @@ footer {
 }
 .link-2 {
   text-align: left;
-  margin-right: 9%;
 }
 .link-3 {
   text-align: right;
 }
 .link-4 {
-  text-align: right;
-  margin-left: 0.2%;
+  text-align: right;;
 }
 .main-header-logo {
   position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -60px;
 }
 /*Основная часть главной*/
 
 /*Заглавное изображение*/
 
-.poligon {
-  position: absolute;
-  width: 100.2%;
-  height: auto;
-}
 .intro {
-  background-image: url(../img/intro.jpg);
-  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='1200 57'%3e%3cpath d='M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z' fill='%23fff'/%3e%3c/svg%3e "), url(../img/intro.jpg);
+  background-repeat: no-repeat no-repeat;
   background-color: #abc7d8;
   height: 431px;
   padding-top: 77px;
@@ -201,7 +170,6 @@ footer {
   padding-top: 56px;
 }
 .advice h2 {
-  font-weight: bolder;
   margin-top: 28px;
   margin-bottom: 10px;
 }
@@ -209,25 +177,19 @@ footer {
 
 .booking-section {
   width: 568px;
-  height: 235px;
-  margin-top: 58px;
-  margin-bottom: 37px;
   margin-left: 316px;
   text-align: center;
 }
 .booking-title {
-  height: 42px;
   margin: 14px 0 34px 0;
 }
 .booking-text {
-  height: 42px;
   margin: 14px 0 50px 0;
 }
 /*Скрытое окно*/
 
 .booking-info {
   width: 456px;
-  height: 287px;
   color: #000000;
   background: #ffffff;
   border: none;
@@ -236,7 +198,6 @@ footer {
   line-height: 26px;
   box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
   position: absolute;
-  margin-left: 316px;
 }
 .hotel-search {
   color: #000;
@@ -277,7 +238,6 @@ footer {
 .btn-calendar {
   position: absolute;
   width: 21px;
-  position: absolute;
   left: 480px;
   margin: 5px 0 0;
   padding: 0;
@@ -299,11 +259,10 @@ footer {
 .people {
   display: flex;
 }
-.btn-grey {
+.grey-box {
   color: #a9a9a9;
   background: #f2f2f2;
   width: 38px;
-  height: 38px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -394,7 +353,7 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "PTSans Bold" sans-serif;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -451,20 +410,15 @@ footer {
 .social-icon img, .social-icon svg {
   margin: auto;
   max-width: 20px;
-  height: auto;
 }
 /*Футер*/
 
-footer {
+.main-footer {
   background: ;
   padding: 36px 0;
   display: flex;
-  width: 1200px;
   padding: 38px 0;
   align-items: center;
-}
-footer ul {
-  font-size: 0;
 }
 .main-footer-hashtag {
   font-size: 21px;
