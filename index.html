@@ -11,42 +11,42 @@
 
 <body>
   <!--Хедер-->
-  <div class="container blok">
-    <header class="main-header blok">
-      <nav class="main-navigation blok">
+  <div class="container">
+    <header class="main-header">
+      <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/index-logo.svg" width="140" height="72" alt="логотип сайта Седона">
         </a>
-        <ul class="site-navigation ul">
-          <li><a class="site-navigation-link link-1 active" href="index.html">Информация</a></li>
-          <li><a class="site-navigation-link link-2" href="media.htlm">Фото и видео</a></li>
-          <li><a class="site-navigation-link link-3" href="map.htlm">Карта штата</a>
+        <ul class="site-navigation">
+          <li><a class="site-navigation-link active" href="info.html">Информация</a></li>
+          <li><a class="site-navigation-link" href="media.htlm">Фото и видео</a></li>
+          <li><a class="site-navigation-link" href="map.htlm">Карта штата</a>
           </li>
-          <li><a class="site-navigation-link link-4" href="catalog.html">Гостиницы</a></li>
+          <li><a class="site-navigation-link" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <!--Основная часть-->
-    <main class="blok">
+    <main class="main">
       <!--Заглавное изображение-->
-      <div class="intro blok">
+      <div class="intro">
           <img class="intro-sedona" src="img/intro-sedona.svg" width="459" height="353" alt="Интро: Welcome to gorgeous Sedona">
       </div>
-      <section class="promo blok">
+      <section class="promo">
         <!--Вступительный текст-->
-        <div class="title-page-text blok">
+        <div class="title-page-text">
           <h1 class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
         </div>
         <!--Причины посетить(текст)-1-->
-        <div class="row blok">
+        <div class="row">
           <div class="column column-1">
               <h2 class="column-title title-text">Настоящий городок</h2>
               <p class="column-number"> — №1 — </p>
               <p class="column-description"> Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <!--Причины посетить(фото)-1-->
-          <div class="column blok">
+          <div class="column">
             <div class="photo-sedona">
               <img src="img/photo-city.jpg" width="800" height="401" alt="Фотография зданий Седона на фоне гор">
             </div>
@@ -74,89 +74,100 @@
           </li>
         </ul>
         <!--Причины посетить(текст)-2-->
-        <div class="row blok">
+        <div class="row">
           <div class="column column-1">
               <h2 class="column-title title-text"> Там есть Мост дьявола</h2>
               <p class="column-number"> — №2 —</p>
               <p class="column-description"> Да, по нему можно пройти! Если конечно вы осмелитесь </p>
           </div>
           <!--Причины посетить(фото)-2-->
-          <div class="column blok">
+          <div class="column">
               <img src="img/photo-bridge.jpg" width="800" height="400" alt="Фотография моста дьявола">
           </div>
         </div>
         <!--Причины посетить-3-->
-        <div class="row blok">
-          <div class="column column-2 blok">
+        <div class="row">
+          <div class="column column-2">
               <h2 class="column-title title-text"> Небольшая площадь </h2>
               <p class="column-number"> — №3 — </p>
               <p class="column-description"> Все достопримечательности находятся очень близко </p>
           </div>
             <!--Причины посетить-4-->
-          <div class="column column-2 blok">
+          <div class="column column-2">
               <h2 class="column-title title-text"> Красивая дорога </h2>
               <p class="column-number"> — №4 — </p>
               <p class="column-description"> Ехать в Седону из Лас-Вегаса совсем не скучно! </p>
           </div>
             <!--Причины посетить-5-->
-          <div class="column column-2 blok">
+          <div class="column column-2">
               <h2 class="column-title title-text"> Мало туристов </h2>
               <p class="column-number"> — №5 — </p>
               <p class="column-description"> Большинство едет в гранд каньон и толпится там </p>
           </div>
        </div>
       </section>
-      <section class="search blok">
+      <section class="search">
         <!--Бронирование-->
-        <div class="booking-section blok">
+        <div class="booking-section">
           <h2 class="booking-title title-text">Заинтересовались?</h2>
           <p class="booking-text"> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
           <a class="booking-btn btn-brown btn" href="#">Поиск гостинницы в Седоне</a>
         </div>
         <!--Скрытые окна-->
-        <section class="hotel-search blok">
+        <section class="hotel-search">
           <form class="booking-info" method="post" action="https://echo.htmlacademy.ru">
             <div class="form-content">
                 <!--Даты-->
-                <div class="form-line blok">
+                <div class="form-line">
                     <label class="labeles" for="arrival">Дата заезда</label>
-                    <input class="number date-line" type="text" name="date" id="arrival" placeholder="24 Апреля 2017" value="">
-                    <button class="button btn-calendar">
-                      <img class="calendar" src="img/calendar.svg" width="21" height="22" alt="Иконка календарь">
-                    </button>
+                    <div class="input-wrapper">
+                      <input class="number date-line" type="text" name="date" id="arrival" placeholder="24 Апреля 2017" value="">
+                      <button class="button calendar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+                      </button>
+                    </div>
                 </div>
-                <div class="form-line blok">
+                <div class="form-line">
                     <label class="labeles" for="departure">Дата выезда</label>
-                    <input class="number date-line" type="text" name="date" id="departure" placeholder="4 Июля 2017" value="">
-                    <button class="button btn-calendar">
-                      <img class="calendar" src="img/calendar.svg" width="21" height="22" alt="Иконка календарь">
-                    </button>
+                    <div class="input-wrapper">
+                      <input class="number date-line" type="text" name="date" id="departure" placeholder="4 Июля 2017" value="">
+                      <button class="button calendar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+                      </button>
+                    </div>
                 </div>
 
                 <!--Дополнительная инфо-->
-                <div class="form-line people blok">
+                <div class="form-line people">
                   <div class="grownup-info">
                     <label class="labeles" for="grownup-number">Взрослые:</label>
                     <div class="input-wrapper">
-                      <button type="button" class="grey-box" name="minus-grownup">
-                        <img class="minus" src="img/minus.svg" width="12" height="3" alt="Уменьшить колличество">
+                      <button type="button" class="minus" name="minus-grownup">
+                        <span class="visually-hidden">Уменьшить</span>
+                        <svg  height="12" viewbox="0 0 32 32" width="12"><path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path></svg>
                       </button>
-                      <input class="number grey-box" id="grownup-number" type="text" pattern="[0-9]" value="2">
-                      <button type="button" class="grey-box" name="plus-grownup">
-                        <img class="plus" src="img/plus.svg" width="11" height="11" alt="Увеличить колличество">
+                      <input class="number input-people" id="grownup-number" type="text" pattern="[0-9]" value="2">
+                      <button type="button" class = "plus" name="plus-grownup">
+                        <span class="visually-hidden">Прибавить</span>
+                        <svg  height="11" viewbox="0 0 32 32" width="11">
+                      <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+                        </svg>
                       </button>
                     </div>
                   </div>
-                  <div class="kids-info blok">
+                  <div class="kids-info">
                     <label class="labeles" for="kids-number">Дети:</label>
                     <div class="input-wrapper">
-                      <button type="button" class="grey-box" name="minus-kids">
-                        <img class="minus" src="img/minus.svg" width="12" height="3" alt="Уменьшить колличество">
+                      <button type="button" class="minus" name="minus-grownup">
+                        <span class="visually-hidden">Уменьшить</span>
+                        <svg  height="12" viewbox="0 0 32 32" width="12"><path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path></svg>
                       </button>
-                      <input class="number grey-box" id="kids-number" type="text" pattern="[0-9]" value="0">
-                  
-                      <button type="button" class="grey-box" name="plus-kids">
-                        <img class="plus" src="img/plus.svg" width="11" height="11" alt="Увеличить колличество">
+                      <input class="number input-people" id="kids-number" type="text" pattern="[0-9]" value="0">
+                      <button type="button" class="plus" name="plus-kids">
+                        <span class="visually-hidden">Прибавить</span>
+                        <svg  height="11" viewbox="0 0 32 32" width="11">
+                      <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+                        </svg>
                       </button>
                     </div>     
                 </div> 
@@ -166,13 +177,13 @@
           </form>
         </section>
         <!--Карта-->
-        <div class="map blok">
+        <div class="map">
           <img src="img/map-image.jpg" width="1200" height="748" alt="Карта Седоны">
         </div>
       </section>
     </main>
     <!--Футер-->
-    <footer class="main-footer blok">
+    <footer class="main-footer">
       <p class="main-footer-hashtag"> #visitSEDONA </p>
       <ul class="social ul">
         <li class="social-button"><a href="https://twitter.com/" class="btn btn-blue social-icon tw" target="blank" aria-label="Наша страница на Twitter">Twitter</a>

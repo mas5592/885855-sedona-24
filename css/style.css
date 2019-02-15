@@ -13,15 +13,14 @@ body {
   background-color: #f2f2f2;
   background-position: top center;
 }
-.blok {
-  display: block;
-}
+
 .main-title {
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+  display: block;
 }
 .title-text {
   font-size: 21px;
@@ -60,7 +59,6 @@ a {
 .site-navigation {
   font-size: 0;
   display: flex;
-  margin: 0;
   line-height: 26px;
 }
 .site-navigation a {
@@ -76,18 +74,7 @@ a {
   box-sizing: border-box;
   width: 25%;
 }
-.link-1 {
-  text-align: left;
-}
-.link-2 {
-  text-align: left;
-}
-.link-3 {
-  text-align: right;
-}
-.link-4 {
-  text-align: right;;
-}
+
 .main-header-logo {
   position: absolute;
 }
@@ -153,6 +140,7 @@ a {
   min-height: 256px;
   max-height: 256px;
   overflow: hidden;
+  display: block;
 }
 .column-1 {
   color: #fff;
@@ -168,6 +156,7 @@ a {
   width: 400px;
   height: 265px;
   padding-top: 56px;
+  display: block;
 }
 .advice h2 {
   margin-top: 28px;
@@ -187,45 +176,83 @@ a {
   margin: 14px 0 50px 0;
 }
 /*Скрытое окно*/
-
-.booking-info {
-  width: 456px;
-  color: #000000;
-  background: #ffffff;
-  border: none;
-  font-weight: bold;
-  padding: 55px;
-  line-height: 26px;
-  box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
-  position: absolute;
-}
 .hotel-search {
-  color: #000;
+  position: relative;
+  overflow: hidden;
+}
+.booking-info {
+  top: 0;
+  left: 316px;
+  width: 512px;
+  padding-top: 55px;
+  padding-left: 55px;
+  font: inherit;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: bold;
   text-align: left;
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
+  margin: 0 auto;
+  border: none;
+}
+.form-content {
+  padding: 40px;
 }
 .form-line {
-  width: 458px;
-  box-sizing: border-box;
-  align-items: center;
   display: flex;
-  margin-bottom: 10px;
-  display: -webkit-inline-flex;
-  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
 }
-.label {
-  cursor: default;
+.people {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  width: 456px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  box-sizing: border-box;
+  margin-left: 0;
+}
+.people:last-child {
+  margin-right: 0;
+}
+.input-wrapper {
+  position: relative;
+  flex-grow: 1;
+  width: 114px;
+}
+.labeles {
+  flex: none;
+  width: 112px;
+
+  margin-right: 18px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
 }
 .number {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 40px 0 10px;
+  width: 100%;
+  height: 38px;
   line-height: 26px;
-  font-size: 14px;
-  background-color: #f2f2f2;
-  color: #000000;
-  font: inherit;
-  text-transform: uppercase;
   border: 2px solid #f2f2f2;
+  background-color: #f2f2f2;
+  color: #000000; 
+  font-weight: 700; 
+  font-size: 14px;
   outline: none;
+  font: inherit;
+  border: none;
+  text-transform: uppercase;
 }
 .number:hover {
   background-color: #ebebeb;
@@ -235,38 +262,53 @@ a {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
-.btn-calendar {
-  position: absolute;
-  width: 21px;
-  left: 480px;
-  margin: 5px 0 0;
-  padding: 0;
-  font-size: 20px;
-  color: #f2f2f2;
-  border: 0px;
-}
-.date-line {
-  width: 290px;
-  padding: 4px 40px 4px 15px;
-}
-.grownup-info {
-  display: inline-block;
-  padding-right: 50px;
-}
-.input-wrapper {
-  background: #f2f2f2;
-}
-.people {
-  display: flex;
-}
-.grey-box {
-  color: #a9a9a9;
-  background: #f2f2f2;
-  width: 38px;
-  border: none;
-  outline: none;
-  cursor: pointer;
+.input-people {
+  width: 114px;
   text-align: center;
+}
+.plus,
+.minus,
+.calendar { 
+  position: absolute;
+  top: 0;
+  padding: 0;
+  top: 0px;
+  background-color: #f2f2f2;
+  fill: #cacaca;
+  border: none;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  vertical-align: middle;
+  outline: none;
+}
+.calendar:hover,
+.plus:hover,
+.minus:hover {
+  fill: #000000;
+  border: none;
+}
+.calendar:active,
+.plus:active,
+.minus:active  {
+  fill: #81b3d2;
+}
+.calendar,
+.plus {
+  right: 0;
+}
+.minus {
+  left: 0;
+}
+.form-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.label {
+  cursor: default;
 }
 /*Гостинницы*/
 
@@ -353,7 +395,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-family: "PTSans Bold" sans-serif;
+  font-family: "PT Sans", sans-serif;
   border: none;
   border-radius: 0;
   cursor: pointer;
@@ -398,6 +440,7 @@ a {
   width: 568px;
   font-size: 21px;
   line-height: 26px;
+  display: block;
 }
 .btn-find {
   padding: 16px 20px;
