@@ -184,8 +184,7 @@ a {
   top: 0;
   left: 316px;
   width: 512px;
-  padding-top: 55px;
-  padding-left: 55px;
+  padding: 55px;
   font: inherit;
   font-size: 14px;
   font-weight: bold;
@@ -195,9 +194,6 @@ a {
   box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
   margin: 0 auto;
   border: none;
-}
-.form-content {
-  padding: 40px;
 }
 .form-line {
   display: flex;
@@ -457,7 +453,6 @@ a {
 /*Футер*/
 
 .main-footer {
-  background: ;
   padding: 36px 0;
   display: flex;
   padding: 38px 0;
