@@ -29,9 +29,11 @@
     <!--Основная часть-->
     <main class="main">
       <!--Заглавное изображение-->
-      <div class="intro">
-          <img class="intro-sedona" src="img/intro-sedona.svg" width="459" height="353" alt="Интро: Welcome to gorgeous Sedona">
-      </div>
+      <section class="image-sedona"> 
+        <div class="intro">
+            <img class="intro-sedona" src="img/intro-sedona.svg" width="459" height="353" alt="Интро: Welcome to gorgeous Sedona">
+        </div>
+      </section>
       <section class="promo">
         <!--Вступительный текст-->
         <div class="title-page-text">
@@ -58,31 +60,31 @@
           <li class="advice">
             <img class="icon" src="img/icon-1.svg" width="75" height="72" alt="Иконка Дом">
             <h2 class="title-text">Жилье</h2>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p class="column-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <!--Еда-->
           <li class="advice">
             <img class="icon" src="img/icon-2.svg" width="74" height="70" alt="Иконка Гамбургер">
             <h2 class="title-text">Еда</h2>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p class="column-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <!--Сувениры-->
           <li class="advice">
             <img class="icon" src="img/icon-3.svg" width="64" height="76" alt="Иконка Подарок">
             <h2 class="title-text">Сувениры</h2>
-            <p>Не только китайского, но и местного производства!</p>
+            <p class="column-description">Не только китайского, но и местного производства!</p>
           </li>
         </ul>
         <!--Причины посетить(текст)-2-->
         <div class="row">
+          <!--Причины посетить(фото)-2-->
+          <div class="column">
+              <img src="img/photo-bridge.jpg" width="800" height="400" alt="Фотография моста дьявола">
+          </div>
           <div class="column column-1">
               <h2 class="column-title title-text"> Там есть Мост дьявола</h2>
               <p class="column-number"> — №2 —</p>
               <p class="column-description"> Да, по нему можно пройти! Если конечно вы осмелитесь </p>
-          </div>
-          <!--Причины посетить(фото)-2-->
-          <div class="column">
-              <img src="img/photo-bridge.jpg" width="800" height="400" alt="Фотография моста дьявола">
           </div>
         </div>
         <!--Причины посетить-3-->
@@ -119,7 +121,7 @@
             <div class="form-content">
                 <!--Даты-->
                 <div class="form-line">
-                    <label class="labeles" for="arrival">Дата заезда</label>
+                    <label class="labeles date" for="arrival">Дата заезда</label>
                     <div class="input-wrapper">
                       <input class="number date-line" type="text" name="date" id="arrival" placeholder="24 Апреля 2017" value="">
                       <button class="button calendar">
@@ -128,7 +130,7 @@
                     </div>
                 </div>
                 <div class="form-line">
-                    <label class="labeles" for="departure">Дата выезда</label>
+                    <label class="labeles date" for="departure">Дата выезда</label>
                     <div class="input-wrapper">
                       <input class="number date-line" type="text" name="date" id="departure" placeholder="4 Июля 2017" value="">
                       <button class="button calendar">
@@ -140,7 +142,7 @@
                 <!--Дополнительная инфо-->
                 <div class="form-line people">
                   <div class="grownup-info">
-                    <label class="labeles" for="grownup-number">Взрослые:</label>
+                    <label class="labeles adult" for="grownup-number">Взрослые:</label>
                     <div class="input-wrapper">
                       <button type="button" class="minus" name="minus-grownup">
                         <span class="visually-hidden">Уменьшить</span>
@@ -156,7 +158,7 @@
                     </div>
                   </div>
                   <div class="kids-info">
-                    <label class="labeles" for="kids-number">Дети:</label>
+                    <label class="labeles kids" for="kids-number">Дети:</label>
                     <div class="input-wrapper">
                       <button type="button" class="minus" name="minus-grownup">
                         <span class="visually-hidden">Уменьшить</span>
@@ -175,25 +177,27 @@
             </div>
             <button class="btn btn-blue btn-find" type="submit">Найти</button>
           </form>
+          <!--Карта-->
+          <div class="map">
+            <img src="img/map-image.jpg" width="1200" height="748" alt="Карта Седоны">
+          </div>
         </section>
-        <!--Карта-->
-        <div class="map">
-          <img src="img/map-image.jpg" width="1200" height="748" alt="Карта Седоны">
-        </div>
+        
       </section>
     </main>
     <!--Футер-->
-    <footer class="main-footer">
+   <footer class="main-footer">
       <p class="main-footer-hashtag"> #visitSEDONA </p>
-      <ul class="social ul">
-        <li class="social-button"><a href="https://twitter.com/" class="btn btn-blue social-icon tw" target="blank" aria-label="Наша страница на Twitter">Twitter</a>
-          <li class="social-button"><a href="https://www.facebook.com/" class="btn btn-blue social-icon fb" target="blank" aria-label="Наша страница на Facebook">Facebook</a></li>
-          <li class="social-button"><a href="http://www.youtube.com/" class="btn btn-blue social-icon youtube" target="blank" aria-label="Наша страница на YouTube">Youtube</a></li>
+      <ul class="social">
+        <li class="social-button"><a href="https://twitter.com/" class="tw" target="blank" aria-label="Наша страница на Twitter"><span class="icon-twitter"></span>Twitter</a>
+          <li class="social-button"><a href="https://www.facebook.com/" target="blank" aria-label="Наша страница на Facebook"><span class="icon-facebook"></span>Facebook</a></li>
+          <li class="social-button"><a href="http://www.youtube.com/" target="blank" aria-label="Наша страница на YouTube"><span class="icon-youtube">Youtube</a></li>
       </ul>
       <p class="footer-copyright">
         <b> Website by </b>
         <a class="button" href="https://htmlacademy.ru" aria-label="HTLM Academy">
-          <img src="img/logo-html.svg" width="115" height="41" alt="Логотип HTLM Academy">
+          <svg data-name="Layer 1" width="115" height="41" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39">
+            <path d="M401.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,401.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C396.34,348.89,395.17,349.23,395.17,350.33Z" transform="translate(-355.09 -323.29)"/><path d="M408.15,343.91a5.29,5.29,0,0,1,2.7.67v1.79a4.28,4.28,0,0,0-2.42-.73,2.89,2.89,0,1,0,0,5.76,5.26,5.26,0,0,0,2.55-.67v1.8a6.58,6.58,0,0,1-2.9.6,4.42,4.42,0,0,1-4.72-4.54A4.54,4.54,0,0,1,408.15,343.91Z" transform="translate(-355.09 -323.29)"/><path d="M420.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,420.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C415.33,348.89,414.17,349.23,414.17,350.33Z" transform="translate(-355.09 -323.29)"/><path d="M431.76,340.14V352.9H430v-1.39a4.07,4.07,0,0,1-3.35,1.62,4.62,4.62,0,0,1,0-9.22,4,4,0,0,1,3.15,1.37v-5.14h2ZM427,345.62a2.9,2.9,0,0,0,0,5.8,3,3,0,0,0,2.79-1.84v-2.13A3.06,3.06,0,0,0,427,345.62Z" transform="translate(-355.09 -323.29)"/><path d="M438.08,343.91c3.48,0,4.68,2.81,4.12,5.34h-6.58c0.22,1.57,1.75,2.22,3.35,2.22a6.41,6.41,0,0,0,2.77-.62v1.68a7.5,7.5,0,0,1-3.14.6c-2.68,0-5-1.53-5-4.61A4.39,4.39,0,0,1,438.08,343.91Zm0.09,1.62a2.39,2.39,0,0,0-2.57,2.26h4.85A2.06,2.06,0,0,0,438.17,345.53Z" transform="translate(-355.09 -323.29)"/><path d="M444.19,352.9v-8.75h1.73v1.09a4,4,0,0,1,2.92-1.33,3,3,0,0,1,2.73,1.4,4.33,4.33,0,0,1,3.06-1.4,3.21,3.21,0,0,1,3.32,3.52v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,2.94,2.94,0,0,0-2.17,1.18c0,0.2,0,.4,0,0.6v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,3.11,3.11,0,0,0-2.32,1.35v5.91h-2Z" transform="translate(-355.09 -323.29)"/><path d="M466.56,344.15h2l-4.1,9.93c-0.95,2.28-2.19,3-3.52,3a5,5,0,0,1-1.15-.15v-1.66a3,3,0,0,0,.89.13c0.95,0,1.66-.67,2.17-2l0.18-.44-4.16-8.82H461l3,6.6Z" transform="translate(-355.09 -323.29)"/><path d="M395.75,324.82v5a4,4,0,0,1,2.83-1.2,3.41,3.41,0,0,1,3.61,3.57v5.41h-2v-5.16a1.9,1.9,0,0,0-2-2.1,3.08,3.08,0,0,0-2.44,1.46v5.8h-2V324.82h2Z" transform="translate(-355.09 -323.29)"/><path d="M407.52,325.71v3.12h3.17v1.71h-3.17v4c0,1.15.53,1.53,1.66,1.53a4.71,4.71,0,0,0,1.77-.35v1.68a7.14,7.14,0,0,1-2.35.38,2.68,2.68,0,0,1-3-2.88v-4.38H404v-1.71h1.57v-2.64Z" transform="translate(-355.09 -323.29)"/><path d="M413.19,337.58v-8.75h1.73v1.09a4,4,0,0,1,2.92-1.33,3,3,0,0,1,2.73,1.4,4.33,4.33,0,0,1,3.06-1.4,3.21,3.21,0,0,1,3.32,3.52v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,2.94,2.94,0,0,0-2.17,1.18c0,0.2,0,.4,0,0.6v5.47h-2v-5.41a1.67,1.67,0,0,0-1.73-1.84,3.11,3.11,0,0,0-2.32,1.35v5.91h-2Z" transform="translate(-355.09 -323.29)"/><rect x="74.72" y="1.52" width="1.95" height="12.76"/><path d="M370.53,323.31l-0.16,0-15.28,1.6v28L370.37,362l15.28-9.09v-28Zm13.12,28.45-13.28,7.9-13.28-7.9V340.28l13.22,7.87,0,1.43-9.07-5.4v1.38l9.11,5.47,0,1.46-9.1-5.42v1.38l9.11,5.47h0l9.19-5.5v-1.39h0v-4.52l4.1-2.45v11.67Zm0-13.16L380,340.74h0l-1.68,1-8-4.76v1.38l6.84,4.07-0.06,0-0.15.09-1,.57-5.64-3.36v1.38l4.45,2.65-1.05.7,0,0-3.36-2v1.38l2.21,1.3-2.25,1.35-13.16-7.82,13.17-7.92h0Zm0-1.39-13.35-7.87h0l-13.2,7.86v-10.5l13.28-1.39,13.28,1.39v10.51Z" transform="translate(-355.09 -323.29)"/>
         </a>
       </p>
     </footer>
