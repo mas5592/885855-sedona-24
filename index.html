@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
@@ -45,10 +45,10 @@
           <div class="column column-1">
               <h2 class="column-title title-text">Настоящий городок</h2>
               <p class="column-number"> — №1 — </p>
-              <p class="column-description"> Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p class="column-description col-1"> Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <!--Причины посетить(фото)-1-->
-          <div class="column">
+          <div class="column-photo">
             <div class="photo-sedona">
               <img src="img/photo-city.jpg" width="800" height="401" alt="Фотография зданий Седона на фоне гор">
             </div>
@@ -60,29 +60,29 @@
           <li class="advice">
             <img class="icon" src="img/icon-1.svg" width="75" height="72" alt="Иконка Дом">
             <h2 class="title-text">Жилье</h2>
-            <p class="column-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p class="column-description col-1">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <!--Еда-->
           <li class="advice">
-            <img class="icon" src="img/icon-2.svg" width="74" height="70" alt="Иконка Гамбургер">
+            <img class="icon-2" src="img/icon-2.svg" width="74" height="70" alt="Иконка Гамбургер">
             <h2 class="title-text">Еда</h2>
-            <p class="column-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p class="column-description col-1">Всегда заказывайте фирменный бургер,&nbsp; вы не разочаруетесь!</p>
           </li>
           <!--Сувениры-->
           <li class="advice">
             <img class="icon" src="img/icon-3.svg" width="64" height="76" alt="Иконка Подарок">
             <h2 class="title-text">Сувениры</h2>
-            <p class="column-description">Не только китайского, но и местного производства!</p>
+            <p class="column-description col-1">Не только китайского, но и местного производства!</p>
           </li>
         </ul>
         <!--Причины посетить(текст)-2-->
         <div class="row">
           <!--Причины посетить(фото)-2-->
-          <div class="column">
+          <div class="column-photo">
               <img src="img/photo-bridge.jpg" width="800" height="400" alt="Фотография моста дьявола">
           </div>
           <div class="column column-1">
-              <h2 class="column-title title-text"> Там есть Мост дьявола</h2>
+              <h2 class="column-title title-text col-3"> Там есть Мост дьявола</h2>
               <p class="column-number"> — №2 —</p>
               <p class="column-description"> Да, по нему можно пройти! Если конечно вы осмелитесь </p>
           </div>
@@ -92,19 +92,19 @@
           <div class="column column-2">
               <h2 class="column-title title-text"> Небольшая площадь </h2>
               <p class="column-number"> — №3 — </p>
-              <p class="column-description"> Все достопримечательности находятся очень близко </p>
+              <p class="column-description col-2"> Все достопримечательности находятся очень близко </p>
           </div>
             <!--Причины посетить-4-->
           <div class="column column-2">
               <h2 class="column-title title-text"> Красивая дорога </h2>
               <p class="column-number"> — №4 — </p>
-              <p class="column-description"> Ехать в Седону из Лас-Вегаса совсем не скучно! </p>
+              <p class="column-description col-2"> Ехать в Седону из Лас-Вегаса совсем не скучно! </p>
           </div>
             <!--Причины посетить-5-->
           <div class="column column-2">
               <h2 class="column-title title-text"> Мало туристов </h2>
               <p class="column-number"> — №5 — </p>
-              <p class="column-description"> Большинство едет в гранд каньон и толпится там </p>
+              <p class="column-description col-2"> Большинство едет в гранд каньон &nbsp; и толпится там </p>
           </div>
        </div>
       </section>
@@ -179,19 +179,18 @@
           </form>
           <!--Карта-->
           <div class="map">
-            <img src="img/map-image.jpg" width="1200" height="748" alt="Карта Седоны">
           </div>
         </section>
         
       </section>
     </main>
     <!--Футер-->
-   <footer class="main-footer">
+   <footer class="main-footer main-page-footer">
       <p class="main-footer-hashtag"> #visitSEDONA </p>
       <ul class="social">
-        <li class="social-button"><a href="https://twitter.com/" class="tw" target="blank" aria-label="Наша страница на Twitter"><span class="icon-twitter"></span>Twitter</a>
-          <li class="social-button"><a href="https://www.facebook.com/" target="blank" aria-label="Наша страница на Facebook"><span class="icon-facebook"></span>Facebook</a></li>
-          <li class="social-button"><a href="http://www.youtube.com/" target="blank" aria-label="Наша страница на YouTube"><span class="icon-youtube">Youtube</a></li>
+        <li class="social-button"><a href="https://twitter.com/" class="icon-twitter" target="blank" aria-label="Наша страница на Twitter">Twitter</a>
+          <li class="social-button"><a href="https://www.facebook.com/" class="icon-facebook" target="blank" aria-label="Наша страница на Facebook">Facebook</a></li>
+          <li class="social-button"><a href="http://www.youtube.com/" class="icon-youtube" target="blank" aria-label="Наша страница на YouTube">Youtube</a></li>
       </ul>
       <p class="footer-copyright">
         <b> Website by </b>

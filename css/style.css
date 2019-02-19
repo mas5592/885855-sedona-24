@@ -63,7 +63,7 @@ a {
   font-size: 0;
   margin: 0;
   list-style: none;
-  padding-left: 0px; /*иначе строчки сдвигаются на 40px*/
+  padding-left: 0px;
 }
 .site-navigation a {
   color: #000000;
@@ -88,7 +88,7 @@ a {
   margin-left: 6%;
 }
 .site-navigation li:nth-child(4n + 2) {
-   margin-right: 8%;
+  margin-right: auto;
 }
 .site-navigation li:nth-child(4n) {
   margin-right: 6%;
@@ -98,7 +98,6 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
-
 /*Сетки*/
 .main-header {
   outline: 1px dotted red;
@@ -115,8 +114,9 @@ a {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='1200 57'%3e%3cpath d='M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z' fill='%23fff'/%3e%3c/svg%3e "), url(../img/intro.jpg);
   background-repeat: no-repeat no-repeat;
   background-position: bottom center, center 28.5%;
-  background-size: auto, cover;
+  background-size: 100% 57px, cover;
   background-color: #81b4d3;
+  padding-top: 75px;
 }
 .intro-sedona {
   display: block;
@@ -125,10 +125,8 @@ a {
   margin: 0 auto;
   margin-bottom: 23px;
   text-align: center;
-  padding: 55px;
 }
 /*Вступительный текст*/
-
 .title-page-text {
   max-width: 575px;
   margin: 0 auto;
@@ -147,53 +145,78 @@ a {
 /*Причины посетить*/
 .row {
   display: flex;
-  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0; 
 }
-.column {
-  width: 800px;
-  height: 256px;
+.column, .advice {
+  max-width: 316px;
+  min-width: 316px;
   vertical-align: top;
+  padding: 50px 3.5%;
 }
 .column-title {
   max-width: 180px;
-  max-height: 51px;
+  font-family: "PT Sans Bold",Arial,sans-serif;
   margin: 0 auto;
-  padding-top: 54px;
 }
 .column-number {
-  padding-bottom: 20px;
+  padding-bottom: 12px;
+  margin: 0 auto;
 }
 .column-description {
   display: block;
   -webkit-box-direction: normal;
-  padding: 0;
-  max-width: 250px;
+  font-size: 14px;
+  margin: 0 auto;
   text-align: center;
-  padding-left: 75px;
-  padding-right: 75px;
+  font-weight: 400;
 }
-.photo-sedona {
-  width: 800px;
+.col-1 {
+  max-width: 300px;
+}
+.col-2 {
+  max-width: 260px;
+}
+.col-3 {
+  max-width: 315px;
+}
+.column-photo {
+  min-width: 800px;
   min-height: 256px;
   max-height: 256px;
   overflow: hidden;
   display: block;
 }
 .column-1 {
-  color: #fff;
-  background-color: #81b3d2;
+  min-height: 156px;
+  text-align: center;
+  background: #81b3d2;
+  color: white;
 }
 .column-2 {
+  min-height: 156px;
   background-color: #f2f2f2;
 }
-.advices {
-  padding: 0px;
-}
 .advice {
-  width: 400px;
-  height: 265px;
+  min-height: 265px;
   padding-top: 56px;
   display: block;
+ 
+}
+.icon {
+  padding-top: 20px;
+  padding-bottom: 7px;
+}
+.icon-2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 .advice h2 {
   margin-top: 28px;
@@ -207,7 +230,9 @@ a {
 .column-description,
 .photo-sedona,
 .advices,
-.advice {
+.advice,
+.icon,
+.title-text {
   position: relative;
   outline: 1px dotted red;
 }
@@ -289,12 +314,7 @@ a {
 }
 .labeles {
   flex: none;
-}
-.adult {
-  padding-right: 40px;
-}
-.kids {
-  padding-right: 28px;
+  width: 98px;
 }
 .number {
   -webkit-box-sizing: border-box;
@@ -365,8 +385,11 @@ a {
 .label {
   cursor: default;
 }
-.date {
-  padding-right: 20px;
+.map {
+  width: 1200px;
+  height: 594px;
+  background-image: url(../img/map-image.jpg);
+  background-repeat: no-repeat;
 }
 /*Сетки*/
 .form-content,
@@ -459,7 +482,7 @@ a {
 .arrow:active {
   fill:#81b3d2;
 }
-.descending .active {
+.arrow.active {
   fill:#81b3d2;
 }
 /*Отели*/
@@ -489,7 +512,7 @@ a {
   margin-right: 30px;
 }
 .hotel-name {
-  min-width: 750px;
+  max-width: 700px;
   margin-top: 0px;
   margin-bottom: 5px;
 }
@@ -522,7 +545,7 @@ a {
   margin-top: 0px;
 }
 .hotel-type {
-  margin-right: 30px;
+  width: 110px;
 }
 .rating {
   display: flex;
@@ -641,6 +664,14 @@ a {
   padding: 38px 0;
   align-items: center;
 }
+.main-page-footer {
+  position: absolute;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+  left: 0;
+  right: 0; 
+}
 .main-footer-hashtag {
   font-size: 21px;
   font-weight: bold;
@@ -656,7 +687,6 @@ a {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
   text-align: center;
   width: 150px;
   margin: 0 auto;
@@ -699,7 +729,7 @@ a {
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
   width:17px;
-  height:16px;
+  height:15px;
 }
 .icon-facebook {
   display: inline-block;
