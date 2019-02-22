@@ -110,8 +110,8 @@ a {
 
 /*Заглавное изображение*/
 .intro {
-  width: 100%;
-  min-height: 405px;
+  min-width: 100%;
+  min-height: 510px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='1200 57'%3e%3cpath d='M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z' fill='%23fff'/%3e%3c/svg%3e "), url(../img/intro.jpg);
   background-repeat: no-repeat no-repeat;
   background-position: bottom center, center 28.5%;
