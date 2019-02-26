@@ -592,26 +592,37 @@ input[type="radio"].visually-hidden {
   fill:#81b3d2;
 }
 /*Отели*/
-.hotel-form {
+.form-block {
   box-sizing: border-box;
-  max-width: 1200px;
-  min-height: 217px; 
-  background: #756357 url(../img/filter-background.png)no-repeat;
-  font-size: 16px;
-  line-height: 21px;
+  max-height: 218px;
   color: #ffffff;
+  background: #756357 url(../img/filter-background.png)no-repeat;
+  background-position: 0px -55px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+.hotel-form {
+  display: flex; 
+  padding: 0 72px;
+  padding-top: 23px;
+  padding-bottom: 7px;
+  width: 1056px;
 }
 .hotel-infrastructure,
-.housing-type {
+.housing-type,
+.filter-range{
   display: inline-block;
 }
-.hotel-infrastructure {
-  margin-left: 70px;  
-}
 .filter-title {
-  margin-bottom: 22px;
-  margin-right: 123px;   
-  margin-top: 29px;   
+  margin-bottom: 25px;  
+  margin-top: 0;
+}
+.hotel-infrastructure {
+  width: 252px;
+}
+.housing-type {
+  width: 274px;
 }
 .label-op {
   font-size: 14px;
@@ -619,14 +630,12 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   color: #ffffff;
 }
-
 .filter-range {
-  width: 320px;
-  margin-top: 26px;
-  margin-right:6%;
-  float: right;
-  color: #ffffff;
-  text-transform: uppercase;
+  margin-top: 5px;
+  box-sizing: border-box;
+  width: 520px;
+  padding-left: 203px;
+  position: relative;
 }
 
 .filter-range-title {
@@ -780,7 +789,7 @@ input[type="radio"].visually-hidden {
 .label-check {
   position: relative;
   padding-left: 40px;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
   cursor: pointer;
   display: block;
 }
@@ -804,7 +813,6 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 .hotel-info {
-  align-content: flex-start;  
   flex: 1 1 auto;
   margin-right: 30px;
 }
