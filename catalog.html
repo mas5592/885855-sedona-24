@@ -94,26 +94,21 @@
                 <label class="label-op label-check" for="apartment"><span class="checkbox-indicator"></span>Апартаменты</label>
               </div>
             </div>
-            <div class="filter-cost">
-              <div class="filter-cost-title">Стоимость в сутки(P):
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="label-op min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="label-op max-price">до <input type="text" name="max-price" value="3000"></label>
               </div>
-              <div class="price-control">
-                <label class="label-op price-min">от
-                  <input class="price-input" type="text" name="price-min" value="0">
-                </label>
-                <label class="label-op price-max">до
-                  <input class="price-input" type="text" name="price-max" value="3000">
-                </label>
-              </div>
-              <div class="line-monitoring">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-                  <div class="range-toggle range-toggle-min"></div>
-                  <div class="range-toggle range-toggle-max"></div>
-              </div>
-              <button class="btn-demonstrate" type="submit">Показать</button>
-            </div>            
+              <div class="range-controls">
+              <div class="scale">
+              <div class="bar"></div>
+            </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>           
           </form>
         </div>
       </section>
