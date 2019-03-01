@@ -107,13 +107,6 @@ input[type="radio"].visually-hidden {
   left: 50%;
   transform: translateX(-50%);
 }
-/*Сетки*/
-.main-header {
-  outline: 1px dotted red;
-}
-.site-navigation li {
-  outline: 1px dotted red;
-}
 /*Основная часть главной*/
 
 /*Заглавное изображение*/
@@ -148,12 +141,6 @@ input[type="radio"].visually-hidden {
 }
 .promo {
   text-align: center;
-}
-/*Сетки*/
-.promo,
-.title-page-text{
-  position: relative;
-  outline: 1px dotted red;
 }
 /*Причины посетить*/
 .row {
@@ -266,21 +253,6 @@ input[type="radio"].visually-hidden {
   padding-top: 46px;
   padding-bottom: 15px;
 }
-/*Сетки*/
-.row,
-.column,
-.column-title,
-.column-number,
-.column-description,
-.photo-sedona,
-.advices,
-.advice,
-.icon,
-.icon-2,
-.title-text {
-  position: relative;
-  outline: 1px dotted red;
-}
 /* Бронирование */
 .booking-section {
   width: 568px;
@@ -302,13 +274,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 30px;
   padding-bottom: 16px;
   padding-top: 14px;
-}
-/*Сетки*/
-.booking-section,
-.booking-title,
-.booking-text {
-  position: relative;
-  outline: 1px dotted red;
 }
 /*Скрытое окно*/
 .form-content { 
@@ -365,7 +330,19 @@ input[type="radio"].visually-hidden {
   display:flex;
   animation:form_opacity 0.7s;
 }
-
+@keyframes form_opacity{
+  0%{opacity:0;}
+100%{opacity:1;}
+}
+@keyframes shake{
+  0%,100%{transform:translateX(0);
+  }
+  10%,30%,50%,70%,90%{
+  transform:translateX(-10px);
+  }
+  20%,40%,60%,80%{transform:translateX(10px);
+  }
+}
 .form-line {
   display: flex;
   align-items: center;
@@ -496,17 +473,6 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/map-image.jpg);
   background-repeat: no-repeat;
 }
-/*Сетки*/
-.form-content,
-.form-line,
-.labeles,
-.people,
-.kids-info,
-.grownup-info,
-.input-wrapper {
-  position: relative;
-  outline: 1px dotted red;
-}
 /*Результаты*/
 .result {
   box-sizing: border-box;
@@ -557,12 +523,7 @@ input[type="radio"].visually-hidden {
   color: #81b3d2;
   border-bottom: 1px dotted #81b3d2;
 }
-/*Сетки*/
-.finding-text,
-.arrows {
-  position: relative;
-  outline: 1px dotted red;
-}
+
 /*Стрелки*/
 .arrows {
   margin-top: 20px;
@@ -879,14 +840,6 @@ input[type="radio"].visually-hidden {
 .star {
   margin-left: 2px;
 }
-/*Сетки*/
-.hotel,
-.hotel-foto,
-.hotel-info,
-.rating {
-  position: relative;
-  outline: 1px dotted red;
-}
 /*Кнопки и ссылки*/
 .hotel-name a:hover, .site-navigation a:hover {
   color: #81b3d2;
@@ -1093,11 +1046,4 @@ input[type="radio"].visually-hidden {
 .btn-cop {
   padding-left: 3px;
 }
-/*Сетки*/
-.main-footer-hashtag,
-.social-button,
-.hashtag,
-.footer-copyright {
-  position: relative;
-  outline: 1px dotted red;
-}
+
