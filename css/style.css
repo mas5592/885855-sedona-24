@@ -131,7 +131,8 @@
      border: 0;
      padding: 0;
      white-space: nowrap;
-     clip-path: inset(100%);
+     -webkit-clip-path: inset(100%);
+             clip-path: inset(100%);
      clip: rect(0 0 0 0);
      overflow: hidden;
      font-size: 1px;
@@ -719,11 +720,16 @@
      border-bottom: none;
 }
  .icon-buttons-arrows {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-wrap: wrap;
+     -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
      margin: 0;
      margin-left: auto;
-     align-items: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
      list-style: none;
 }
  .icon-button-arrow:nth-child(1) {
@@ -774,8 +780,11 @@
      padding-bottom: 9px;
 }
  .filter {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-wrap: wrap;
+     -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
 }
  .form-item {
      padding: 0;
@@ -783,6 +792,7 @@
      border: none;
 }
  .filter legend {
+     color: #ffffff;
      margin-right: 110px;
      margin-bottom: 23px;
 }
@@ -987,8 +997,11 @@
      color: #b2b2b2;
 }
  .hotel-item {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-wrap: wrap;
+     -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
      padding-top: 26px;
      padding-bottom: 27px;
      padding-left: 73px;
@@ -1001,8 +1014,11 @@
      padding-top: 5px;
 }
  .hotel-item-info {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-wrap: wrap;
+     -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
      width: 268px;
      padding-left: 30px;
      padding-bottom: 2px;
@@ -1061,7 +1077,8 @@
 }
  .button-detail {
      display: block;
-     box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
      width: 110px;
      padding: 3px 16px;
      margin-top: 15px;
@@ -1073,7 +1090,8 @@
 }
  .button-reservation {
      display: block;
-     box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
      background-color: #766357;
      color: #ffffff;
      width: 142px;
@@ -1101,7 +1119,7 @@
      text-decoration: none;
      text-transform: uppercase;
      text-align: center;
-     font-family: "PT Sans", sans-serif;
+     font-family: "PT Sans", "Arial", sans-serif;
      border: none;
      border-radius: 0;
      cursor: pointer;
